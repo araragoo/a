@@ -58,6 +58,6 @@ let MAX30100_PART_ID = 255
 let MAX30100_I2C_ADDRESS = 87
 basic.forever(function () {
     basic.pause(100)
-    basic.showNumber(i2cread(MAX30100_I2C_ADDRESS, MAX30100_INT_STATUS))
+    basic.showNumber(i2cread(MAX30100_I2C_ADDRESS, MAX30100_LED_CONFIG))
     basic.pause(100)
 })
